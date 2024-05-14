@@ -12,3 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.footer {
+  @apply md:ps-[170px] lg:ps-[280px] sm:ps-[100px] ps-[50px] sm:pe-[70px] pe-[35px] md:pe-[145px] lg:pe-[220px] sm:pt-28 pt-10 pb-9  bg-footer;
+}
+.footer-main {
+  @apply grid md:grid-cols-[1fr_1fr_1fr_1fr] text-[12px] sm:text-[14px] md:grid-rows-[auto] grid-rows-[1fr_1fr] grid-cols-[1fr_1fr] sm:gap-x-[90px] md:gap-x-[126px] gap-x-[50px] gap-y-[20px] sm:gap-y-[60px];
+}
+.desktop-header-first-section {
+  @apply grid px-7 py-3 md:grid-cols-[auto_auto] md:gap-9 gap-y-2 gap-x-3 md:grid-rows-[auto] grid-cols-[auto] grid-rows-[auto_auto];
+}
