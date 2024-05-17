@@ -59,7 +59,7 @@ function DesktopHeader() {
       {/* ////Second section for secondary pages ,favourites and cart//// */}
 
       <div className="grid sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr] bg-black text-white py-3">
-        <div className="flex items-center justify-center gap-12">
+        <div className="flex items-center justify-center sm:gap-10 md:gap-12">
           <div className="flex gap-2 cursor-pointer hover:text-sky-600">
             <div className="-scale-x-100">
               <Segment />
@@ -90,7 +90,7 @@ function DesktopHeader() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-6 border-s-[1px] border-s-neutral-400">
+        <div className="flex items-center justify-center sm:gap-4 md:gap-6 border-s-[1px] border-s-neutral-400">
           <div className="flex items-center gap-2 cursor-pointer hover:text-sky-600">
             <Person2Outlined />
             <Link>Sign in</Link>
@@ -102,13 +102,40 @@ function DesktopHeader() {
           <div className="flex items-center gap-2 cursor-pointer hover:text-sky-600">
             <ShoppingBag />
             <Link>Cart</Link>
+            <span className="flex items-center justify-center text-white bg-green-500 rounded-[50%] p-1 w-6 h-6">
+              3
+            </span>
           </div>
         </div>
       </div>
 
       {/* ////Third section for categories//// */}
 
-      <div></div>
+      <div className="">
+        <ul className="flex items-center justify-center pb-5 list-none md:pt-12 sm:pt-10 sm:gap-3 md:gap-16 sm:px-2 md:px-24 categoryList">
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            electronics
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            clothing
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            home and kitchen
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            beauty and personal care
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            sports and outdoors
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            books and stationery
+          </li>
+          <li className="text-center cursor-pointer hover:text-sky-600">
+            health & wellness
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

@@ -6,6 +6,8 @@ export default {
       colors: {
         footer: "#D1E2EB",
         textGrey: "#555555",
+        textLowerGrey: "#ADADAD",
+        bgGrey: "#F5F5F5",
       },
     },
   },

@@ -1,7 +1,7 @@
 function Loader() {
   return (
-    <div className="flex h-full w-full justify-center align-middle">
-      <span className="loader"></span>
+    <div className="flex justify-center w-full h-full align-middle">
+      <span className="spinner"></span>
     </div>
   );
 }

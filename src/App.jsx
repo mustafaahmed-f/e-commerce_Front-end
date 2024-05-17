@@ -1,11 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./UI/AppLayout";
 import ErrorElement from "./UI/ErrorElement";
-import Home from "./UI/Home";
+import Home from "./Pages/Home";
+import MenuDivContextProvider from "./Contexts/menuDivContext";
 
 const router = createBrowserRouter([
   {
-    element: <AppLayout />,
+    element: (
+      <MenuDivContextProvider>
+        <AppLayout />
+      </MenuDivContextProvider>
+    ),
     errorElement: <ErrorElement />,
     children: [
       {
